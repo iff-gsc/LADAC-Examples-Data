@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ 
+<path>IRIS.ac</path>
+
+<animation>
+    <name>MotorFrontLeft</name>
+    <object-name>Motor 2830.004</object-name>
+    <object-name>10x4.003</object-name>
+</animation>
+<animation>
+    <name>MotorFrontRight</name>
+    <object-name>Motor 2830.001</object-name>
+    <object-name>10x4.001</object-name>
+</animation>
+<animation>
+    <name>MotorBackRight</name>
+    <object-name>Motor 2830.002</object-name>
+    <object-name>10x4.000</object-name>
+</animation>
+<animation>
+    <name>MotorBackLeft</name>
+    <object-name>Motor 2830.000</object-name>
+    <object-name>10x4.002</object-name>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>MotorFrontLeft</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> -0.133 </x1-m>
+        <y1-m> -0.22 </y1-m>
+        <z1-m> 0 </z1-m>
+        <x2-m> -0.133 </x2-m>
+        <y2-m> -0.22 </y2-m>
+        <z2-m> -1 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>MotorFrontRight</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> -0.133 </x1-m>
+        <y1-m> 0.22 </y1-m>
+        <z1-m> 0 </z1-m>
+        <x2-m> -0.133 </x2-m>
+        <y2-m> 0.22 </y2-m>
+        <z2-m> -1 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>MotorBackRight</object-name>
+    <property>engines/engine[2]/rpm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> 0.133 </x1-m>
+        <y1-m> 0.204 </y1-m>
+        <z1-m> 0 </z1-m>
+        <x2-m> 0.133 </x2-m>
+        <y2-m> 0.204 </y2-m>
+        <z2-m> -1 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>MotorBackLeft</object-name>
+    <property>engines/engine[3]/rpm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> 0.133 </x1-m>
+        <y1-m> -0.204 </y1-m>
+        <z1-m> 0 </z1-m>
+        <x2-m> 0.133 </x2-m>
+        <y2-m> -0.204 </y2-m>
+        <z2-m> -1 </z2-m>
+    </axis>
+</animation>
+
+</PropertyList>

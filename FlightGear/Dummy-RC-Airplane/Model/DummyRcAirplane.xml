@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ 
+<path>DummyRcAirplane.ac</path>
+ 
+<!-- Move propeller disk far away because transparency did not work. To do: make transparent (blend) to indicate propeller speed. -->
+ <animation>
+	<type>translate</type>
+	<object-name>PropellerFast</object-name>
+	<property>engines/engine[0]/rpm</property>
+	<offset-m>10000</offset-m>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+  	<name>HtpParts</name>
+  	<object-name>HtpLeft</object-name>
+  	<object-name>HtpRight</object-name>
+  	<object-name>ElevatorLeft</object-name>
+	<object-name>ElevatorRight</object-name>
+	<object-name>HtpSparLeft</object-name>
+	<object-name>HtpSparRight</object-name>
+</animation>
+
+<animation>
+  	<name>Rudder</name>
+  	<object-name>Rudder1</object-name>
+  	<object-name>Rudder2</object-name>
+</animation>
+
+
+<animation>
+    <type>rotate</type>
+    <object-name>Propeller</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> 0 </x1-m>
+        <y1-m> 0 </y1-m>
+        <z1-m> 0 </z1-m>
+        <x2-m> 1 </x2-m>
+        <y2-m> 0 </y2-m>
+        <z2-m> 0 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>HtpParts</object-name>
+    <property>/surface-positions/elevator-trim-tab-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> 0.68 </x1-m>
+        <y1-m> 0 </y1-m>
+        <z1-m> 0.02 </z1-m>
+        <x2-m> 0.68 </x2-m>
+        <y2-m> 1 </y2-m>
+        <z2-m> 0.02 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>ElevatorRight</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+        <x1-m> 0.722 </x1-m>
+        <y1-m> 0.139 </y1-m>
+        <z1-m> 0.02 </z1-m>
+        <x2-m> 0.705 </x2-m>
+        <y2-m> 0.262 </y2-m>
+        <z2-m> 0.02 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>ElevatorLeft</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+		<x1-m> 0.705 </x1-m>
+        <y1-m> -0.262 </y1-m>
+        <z1-m> 0.02 </z1-m>
+        <x2-m> 0.722 </x2-m>
+        <y2-m> -0.139 </y2-m>
+        <z2-m> 0.02 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>Rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+		<x1-m> 0.79 </x1-m>
+        <y1-m> 0 </y1-m>
+        <z1-m> 0.29 </z1-m>
+        <x2-m> 0.775 </x2-m>
+        <y2-m> 0 </y2-m>
+        <z2-m> 0.148 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>AileronLeft</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+		<x1-m> 0.027 </x1-m>
+        <y1-m> -0.768 </y1-m>
+        <z1-m> 0.01 </z1-m>
+        <x2-m> 0.049 </x2-m>
+        <y2-m> -0.43 </y2-m>
+        <z2-m> 0.01 </z2-m>
+    </axis>
+</animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>AileronRight</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>1</factor>
+    <axis>   
+		<x1-m> 0.049 </x1-m>
+        <y1-m> 0.43 </y1-m>
+        <z1-m> 0.01 </z1-m>
+        <x2-m> 0.027 </x2-m>
+        <y2-m> 0.768 </y2-m>
+        <z2-m> 0.01 </z2-m>
+    </axis>
+</animation>
+
+
+
+</PropertyList>

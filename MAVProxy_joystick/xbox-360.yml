@@ -1,0 +1,64 @@
+description: >
+    Microsoft X-Box 360 pad.  This is for a USB cabled X-Box 360
+    controller and assumes mode 2. Left and right trigger are ch7 and
+    ch8.
+match:
+  - 'Microsoft X-Box 360 pad'
+controls:
+  - channel: 1
+    type: axis
+    # right stick, left-right
+    id: 3
+  - channel: 3
+    type: axis
+    # left stick, down-up
+    id: 1
+    invert: true
+  - channel: 4
+    type: axis
+    # left stick, left-right
+    id: 0
+    invert: false
+  - channel: 2
+    type: axis
+    # right stick, down-up
+    id: 4
+  - channel: 7
+    type: axis
+    # left trigger (LT)
+    id: 2
+  - channel: 8
+    type: axis
+    # right trigger (RT)
+    id: 5
+    # channel 5 is the flight mode channel
+  - channel: 5
+    type: multibutton
+    buttons:
+      # button X
+      - id: 2
+        # flight mode 1
+        value: 1200
+      # button Y
+      - id: 3
+        # flight mode 2
+        value: 1300
+      # button LB
+      - id: 4
+        # flight mode 3
+        value: 1400
+      # button RB
+      - id: 5
+        # flight mode 4
+        value: 1550
+  - channel: 6
+    type: multibutton
+    buttons:
+      # button A
+      - id: 0
+      # armed
+        value: 1900
+      # disarmed
+      - id: 1
+        # flight mode 2
+        value: 1100
