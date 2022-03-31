@@ -23,9 +23,9 @@ alt_cntrl.rm.w.dt_down = 5;
 %% controller gains
 
 % @ny_z_Kg/@[e_z_Kg, e_z_Kg_dt, e_z_Kg_dt2]'
-alt_cntrl.K = single( [ ...
+alt_cntrl.K = [ ...
          1.5000    2.0221    0.0297 ...
-    ] );
+    ];
 
 %% attitude controller
 
