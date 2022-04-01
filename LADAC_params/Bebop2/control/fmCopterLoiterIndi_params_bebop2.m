@@ -11,13 +11,9 @@
 fm_loiter.atti_cntrl = cntrlAttiRedIndiLoadParams( ...
     'cntrl_atti_red_indi_params_bebop2');
 
-% attitude controller
-fm_loiter.alt_cntrl = cntrlAltIndiLoadParams( ...
-    'cntrl_alt_indi_params_bebop2' );
-
-% horizontal position controller
-fm_loiter.horiz_pos_cntrl = cntrlHorizPosIndiLoadParams( ...
-    'cntrl_horiz_pos_indi_params_bebop2' );
+%  position controller
+fm_loiter.psc = cntrlPosNdiLoadParams( ...
+    'cntrlPosNdi_params_bebop2' );
 
 % control effectiveness
 fm_loiter.cntrl_effect = controlEffectivenessLoadParams( ...

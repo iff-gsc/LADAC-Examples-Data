@@ -1,4 +1,4 @@
-% ** INDI loiter flight mode parameters (Bebop2) **
+% ** INDI loiter flight mode parameters (Minnie) **
 
 % Disclamer:
 %   SPDX-License-Identifier: GPL-2.0-only
@@ -11,13 +11,9 @@
 fm_loiter.atti_cntrl = cntrlAttiRedIndiLoadParams( ...
     'cntrl_atti_red_indi_params_Minnie');
 
-% attitude controller
-fm_loiter.alt_cntrl = cntrlAltIndiLoadParams( ...
-    'cntrl_alt_indi_params_Minnie' );
-
-% horizontal position controller
-fm_loiter.horiz_pos_cntrl = cntrlHorizPosIndiLoadParams( ...
-    'cntrl_horiz_pos_indi_params_Minnie' );
+% position controller
+fm_loiter.psc = cntrlPosNdiLoadParams( ...
+    'cntrlPosNdi_params_Minnie' );
 
 % control effectiveness
 fm_loiter.cntrl_effect = controlEffectivenessLoadParams( ...
