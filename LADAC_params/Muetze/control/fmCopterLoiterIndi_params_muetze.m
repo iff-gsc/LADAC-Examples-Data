@@ -8,8 +8,8 @@
 % *************************************************************************
 
 % attitude controller
-fm_loiter.atti_cntrl = cntrlAttiRedIndiLoadParams( ...
-    'cntrl_atti_red_indi_params_muetze');
+fm_loiter.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_muetze');
 
 % position controller
 fm_loiter.psc = cntrlPosNdiLoadParams( ...

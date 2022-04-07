@@ -10,23 +10,29 @@
 %% reference model parameter
 
 % maximum lean value
-atti_cntrl.rm.lean.max = deg2rad(45);
+atc.rm.leanmax      = deg2rad(45);
 % natural frequency of second order lean dynamics, rad/s
-atti_cntrl.rm.lean.omega = 9;
+atc.rm.leanfreq     = 9;
 % damping ratio of second order lean dynamics, -
-atti_cntrl.rm.lean.D = 1;
+atc.rm.leandamp     = 1;
 
 % maximum yaw rate, rad/s
-atti_cntrl.rm.r.max = deg2rad(120);
+atc.rm.yawratemax   = deg2rad(120);
 % time constant of first order yaw rate dynamics, s
-atti_cntrl.rm.r.T = 0.3;
+atc.rm.yawratetc    = 0.3;
 
 %% controller gains
 
-% @[ny_atti_dt2]'/@[e_atti, e_atti_dt, e_atti_dt2]'
-% with atti = [roll, pitch, yaw]
-atti_cntrl.K = single( [ ...
-   28.5714         0         0   10.7846         0         0    0.2576         0         0; ...
-         0   28.5714    0.0000         0   10.7846    0.0000         0    0.2576    0.0000; ...
-         0    0.0000    8.8889         0    0.0000    4.7463         0    0.0000    0.1232 ...
-    ] );
+% lean angle error gain, 1/s^2
+atc.k.lean      = 28.5714;
+% lean rate error gain, 1/s
+atc.k.leanrate  = 10.7846;
+% lean acceleration error gain, -
+atc.k.leanacc   = 0.2576;
+
+% yaw angle error gain, 1/s^2
+atc.k.yaw       = 8.8889;
+% yaw rate error gain, 1/s
+atc.k.yawrate   = 4.7463;
+% yaw acceleration error gain, -
+atc.k.yawacc    = 0.1232;

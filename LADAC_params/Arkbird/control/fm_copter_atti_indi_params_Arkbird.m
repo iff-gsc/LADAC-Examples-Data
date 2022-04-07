@@ -8,8 +8,8 @@
 % *************************************************************************
 
 % attitude controller
-fm_atti.cntrl = cntrlAttiRedIndiLoadParams( ...
-    'cntrl_atti_red_indi_params_Arkbird' );
+fm_atti.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_Arkbird' );
 
 % control effectiveness
 fm_atti.cntrl_effect = controlEffectivenessLoadParams( ...

@@ -27,6 +27,3 @@ alt_cntrl.K = [ ...
          1.5000    2.0221    0.0297 ...
     ];
 
-%% attitude controller
-
-alt_cntrl.atti_cntrl = cntrlAttiRedIndiLoadParams('cntrl_atti_red_indi_params_muetze');

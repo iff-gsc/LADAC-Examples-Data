@@ -8,8 +8,8 @@
 % *************************************************************************
 
 % attitude controller
-fm_loiter.atti_cntrl = cntrlAttiRedIndiLoadParams( ...
-    'cntrl_atti_red_indi_params_bebop2');
+fm_loiter.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_bebop2');
 
 %  position controller
 fm_loiter.psc = cntrlPosNdiLoadParams( ...

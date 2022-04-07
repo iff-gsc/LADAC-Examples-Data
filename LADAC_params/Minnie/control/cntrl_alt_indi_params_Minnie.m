@@ -26,7 +26,3 @@ alt_cntrl.rm.w.dt_down = 4;
 alt_cntrl.K = [ ...
          50.0000   28.1578    0.6786 ...
     ];
-
-%% attitude controller
-
-alt_cntrl.atti_cntrl = cntrlAttiRedIndiLoadParams('cntrl_atti_red_indi_params_Minnie');

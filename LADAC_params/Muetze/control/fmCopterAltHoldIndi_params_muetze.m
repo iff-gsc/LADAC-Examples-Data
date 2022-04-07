@@ -8,6 +8,10 @@
 % *************************************************************************
 
 % attitude controller
+fm_alt_hold.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_muetze' );
+
+% attitude controller
 fm_alt_hold.cntrl = cntrlAltIndiLoadParams( ...
     'cntrl_alt_indi_params_muetze' );
 
