@@ -12,7 +12,7 @@
 % maximum lean value
 atc.rm.leanmax      = deg2rad(45);
 % natural frequency of second order lean dynamics, rad/s
-atc.rm.leanfreqa    = 9;
+atc.rm.leanfreq     = 9;
 % damping ratio of second order lean dynamics, -
 atc.rm.leandamp     = 1;
 
