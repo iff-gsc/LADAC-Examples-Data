@@ -68,5 +68,5 @@ copter.aero.C_Lmax = 0.05;
 copter.aero.CoP_xy = 0.05;
 % center of pressure (z_b direction), in m
 copter.aero.CoP_z = 0;
-% damping moment coefficient for rotation, in 1/m
-copter.aero.rate_damp = -0.05;
+% damping moment coefficient for rotation, in N/(m^2*rad/s)
+copter.aero.rate_damp = 0.47;
