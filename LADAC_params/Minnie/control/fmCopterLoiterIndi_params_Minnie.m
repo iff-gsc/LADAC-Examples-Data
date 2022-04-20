@@ -1,4 +1,4 @@
-% ** INDI altitude hold flight mode parameters (Minnie) **
+% ** INDI loiter flight mode parameters (Minnie) **
 
 % Disclamer:
 %   SPDX-License-Identifier: GPL-2.0-only
@@ -8,23 +8,27 @@
 % *************************************************************************
 
 % attitude controller
-fm_alt_hold.cntrl = cntrlAltIndiLoadParams( ...
-    'cntrl_alt_indi_params_Minnie' );
+fm_loiter.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_Minnie');
+
+% position controller
+fm_loiter.psc = cntrlPosNdiLoadParams( ...
+    'cntrlPosNdi_params_Minnie' );
 
 % control effectiveness
-fm_alt_hold.cntrl_effect = controlEffectivenessLoadParams( ...
+fm_loiter.cntrl_effect = controlEffectivenessLoadParams( ...
     'control_effectiveness_params_Minnie' );
 
 % control allocation
-fm_alt_hold.ca = controlAllocationWlsLoadParams( ...
+fm_loiter.ca = controlAllocationWlsLoadParams( ...
     'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-fm_alt_hold.sens_filt = indiSensFiltLoadParams( ...
+fm_loiter.sens_filt = indiSensFiltLoadParams( ...
     'indi_sens_filt_params_Minnie' );
 
 % motor time constant, in s
-fm_alt_hold.motor_time_constant = 0.028;
+fm_loiter.motor_time_constant = 0.028;
 
 % flight mode sample time, in s
-fm_alt_hold.sample_time = 0.0025;
+fm_loiter.sample_time = 0.0025;

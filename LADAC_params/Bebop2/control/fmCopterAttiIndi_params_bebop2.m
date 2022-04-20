@@ -8,8 +8,8 @@
 % *************************************************************************
 
 % attitude controller
-fm_atti.cntrl = cntrlAttiRedIndiLoadParams( ...
-    'cntrl_atti_red_indi_params_bebop2' );
+fm_atti.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_bebop2' );
 
 % control effectiveness
 fm_atti.cntrl_effect = controlEffectivenessLoadParams( ...

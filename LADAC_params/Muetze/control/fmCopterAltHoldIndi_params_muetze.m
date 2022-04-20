@@ -8,8 +8,12 @@
 % *************************************************************************
 
 % attitude controller
-fm_alt_hold.cntrl = cntrlAltIndiLoadParams( ...
-    'cntrl_alt_indi_params_muetze' );
+fm_alt_hold.atc = cntrlAttiRedIndiLoadParams( ...
+    'cntrlAttiRedIndi_params_muetze' );
+
+% attitude controller
+fm_alt_hold.psc = cntrlPosNdiLoadParams( ...
+    'cntrlPosNdi_params_muetze' );
 
 % control effectiveness
 fm_alt_hold.cntrl_effect = controlEffectivenessLoadParams( ...

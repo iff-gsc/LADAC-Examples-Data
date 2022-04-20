@@ -8,10 +8,10 @@
 % *************************************************************************
 
 % reference model parameter
-cntrl.rm.Phi_max = single(deg2rad(45));
-cntrl.rm.Theta_max = single(deg2rad(45));
-cntrl.rm.r_max = single(deg2rad(120));
-cntrl.rm.w_max = single(4);
+cntrl.rm.Phi_max = deg2rad(45);
+cntrl.rm.Theta_max = deg2rad(45);
+cntrl.rm.r_max = deg2rad(120);
+cntrl.rm.w_max = 4;
 
 cntrl.rm.Phi.omega = 9;
 cntrl.rm.Phi.D = 0.9;
