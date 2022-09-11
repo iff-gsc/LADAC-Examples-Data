@@ -8,27 +8,25 @@
 % *************************************************************************
 
 % attitude controller
-fm_alt_hold.atc = cntrlAttiRedIndiLoadParams( ...
-    'cntrlAttiRedIndi_params_Minnie' );
+param.atc = loadParams( 'cntrlAttiRedIndi_params_Minnie' );
 
 % attitude controller
-fm_alt_hold.psc = cntrlPosNdiLoadParams( ...
-    'cntrlPosNdi_params_Minnie' );
+param.psc = loadParams( 'cntrlPosNdi_params_Minnie' );
 
-% control effectiveness
-fm_alt_hold.cntrl_effect = controlEffectivenessLoadParams( ...
-    'control_effectiveness_params_Minnie' );
+% propeller control effectiveness
+param.cep = loadParams( 'indiCeProp_params_Minnie' );
+
+% body control effectiveness
+param.ceb = loadParams( 'indiCeBody_params_Minnie' );
 
 % control allocation
-fm_alt_hold.ca = controlAllocationWlsLoadParams( ...
-    'control_allocation_wls_params_quadcopter' );
+param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-fm_alt_hold.sens_filt = indiSensFiltLoadParams( ...
-    'indi_sens_filt_params_Minnie' );
+param.sflt = loadParams( 'indiSensFilt_params_Minnie' );
 
 % motor time constant, in s
-fm_alt_hold.motor_time_constant = 0.028;
+param.mtc = 0.028;
 
 % flight mode sample time, in s
-fm_alt_hold.sample_time = 0.0025;
+param.ts = 0.0025;

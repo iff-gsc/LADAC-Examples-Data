@@ -8,6 +8,6 @@
 % *************************************************************************
 
 % natural angular frequency of the second order low pass filter
-sens_filt.omega = 80*2*pi;
+param.omega = 80*2*pi;
 % damping ratio of the second order low pass filter
-sens_filt.D = 1;
+param.D = 1;

@@ -8,7 +8,8 @@
 % *************************************************************************
 
 % attitude controller
-param.atc = loadParams( 'cntrlAttiRedIndi_params_bebop2');
+param.atc = loadParams( ...
+    'cntrlAttiRedIndi_params_bebop2');
 
 %  position controller
 param.psc = loadParams( 'cntrlPosNdi_params_bebop2' );
@@ -17,13 +18,13 @@ param.psc = loadParams( 'cntrlPosNdi_params_bebop2' );
 param.cep = loadParams( 'indiCeProp_params_bebop2' );
 
 % body control effectiveness
-param.ceb = loadParams( 'indiCeBody_params_bebop2' );
+param.cep = loadParams( 'indiCeBody_params_bebop2' );
 
 % control allocation
 param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-param.sflt = loadParams( 'indiSensFilt_params_default' );
+param.sens_filt = loadParams( 'indiSensFilt_params_default' );
 
 % motor time constant, in s
 param.mtc = 0.0138;

@@ -8,27 +8,25 @@
 % *************************************************************************
 
 % attitude controller
-fm_loiter.atc = cntrlAttiRedIndiLoadParams( ...
-    'cntrlAttiRedIndi_params_Minnie');
+param.atc = loadParams( 'cntrlAttiRedIndi_params_Minnie');
 
 % position controller
-fm_loiter.psc = cntrlPosNdiLoadParams( ...
-    'cntrlPosNdi_params_Minnie' );
+param.psc = loadParams( 'cntrlPosNdi_params_Minnie' );
 
-% control effectiveness
-fm_loiter.cntrl_effect = controlEffectivenessLoadParams( ...
-    'control_effectiveness_params_Minnie' );
+% propeller control effectiveness
+param.cep = loadParams( 'indiCeProp_params_default' );
+
+% body control effectiveness
+param.ceb = loadParams( 'indiCeBody_params_default' );
 
 % control allocation
-fm_loiter.ca = controlAllocationWlsLoadParams( ...
-    'control_allocation_wls_params_quadcopter' );
+param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-fm_loiter.sens_filt = indiSensFiltLoadParams( ...
-    'indi_sens_filt_params_Minnie' );
+param.sflt = loadParams( 'indiSensFilt_params_Minnie' );
 
 % motor time constant, in s
-fm_loiter.motor_time_constant = 0.028;
+param.mtc = 0.028;
 
 % flight mode sample time, in s
-fm_loiter.sample_time = 0.0025;
+param.ts = 0.0025;

@@ -8,25 +8,21 @@
 % *************************************************************************
 
 % attitude controller
-fm_atti.atc = cntrlAttiRedIndiLoadParams( ...
-    'cntrlAttiRedIndi_params_Arkbird' );
+param.atc = loadParams( 'cntrlAttiRedIndi_params_Arkbird' );
 
 % control effectiveness
-fm_atti.cntrl_effect = controlEffectivenessLoadParams( ...
-    'control_effectiveness_params_Arkbird' );
+param.cntrl_effect = loadParams( 'control_effectiveness_params_Arkbird' );
+param.cntrl_effect.ny_du_red =  param.cntrl_effect.ny_du_red(1:3,:);
+param.cntrl_effect.ny_du_dt =  param.cntrl_effect.ny_du_dt(1:3,:);
 
 % control allocation
-fm_atti.ca = controlAllocationWlsLoadParams( ...
-    'control_allocation_wls_params_Arkbird' );
+param.ca = loadParams( 'control_allocation_wls_params_Arkbird' );
 
 % sensor filter
-fm_atti.sens_filt = indiSensFiltLoadParams( ...
-    'indi_sens_filt_params_default' );
+param.sens_filt = loadParams( 'indiSensFilt_params_default' );
 
 % motor time constant, in s
-fm_atti.motor_time_constant = 0.0265;
+param.motor_time_constant = 0.0265;
 
 % flight mode sample time, in s
-fm_atti.sample_time = 1/300;
-
-
+param.sample_time = 1/300;
