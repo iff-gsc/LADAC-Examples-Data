@@ -29,7 +29,7 @@ param.ceb = loadParams( 'indiCeBody_params_Minnie' );
 param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-param.sflt = loadParams( 'indiSensFilt_params_default' );
+param.sflt = loadParams( 'indiSensFilt_params_Minnie' );
 
 % motor time constant, in s
 param.mtc = 0.028;
