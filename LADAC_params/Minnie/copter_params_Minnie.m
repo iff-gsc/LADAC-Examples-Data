@@ -45,7 +45,9 @@ copter.config.hitPoints_c = [ copter.config.propPos_c + [ 0; 0; 0.02 ], ...
 copter.prop.I = 5.2e-6 * 0.5;
 % copter.prop.I = copter.prop.I * 9;
 % propeller name specifying propeller map (name must be inside database)
-copter.prop.name = '5x3';
+copter.prop.name = '5x3E';
+% factor to adjust thrust and torque (e.g. due to mounting)
+copter.prop.correction_factor = 0.76;
 
 %% motor parameters
 % torque constant of the motor (KT=60/(2*pi*KV)), N.m/A
