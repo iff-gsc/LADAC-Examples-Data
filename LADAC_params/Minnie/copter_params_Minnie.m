@@ -11,10 +11,11 @@
 % mass of vehicle, in kg
 copter.body.m = 0.430;
 % inertial matrix of vehicle, in kg.m^2
-I_13 = 1.6094e-05;
-I_23 = -2.1e-08;
-copter.body.I = [0.00114, 0, I_13; ...
-            0, 0.0009925, I_23; ...
+I_13 = 3e-06;
+I_12 = -8e-06;
+I_23 = 5e-06;
+copter.body.I = [0.00114, I_12, I_13; ...
+            I_12, 0.0009925, I_23; ...
             I_13, I_23, 0.00175];
 
 %% configuration parameters
