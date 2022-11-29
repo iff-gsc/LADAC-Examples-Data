@@ -38,7 +38,7 @@ airplane.act.rudder = actuatorsLoadParams('actuators_pt2_params_default');
 airplane.act.htpTrim = actuatorsLoadParams('actuators_pt2_params_default');
 
 % battery parameters
-airplane.bat = batteryLoadParams( 'params_battery_EasyGlider' );
+airplane.bat = loadParams( 'params_battery_EasyGlider' );
 
 % cmd struct/bus
 airplane.cmd = struct('aileron_left',0.5,'aileron_right',0.5,'elevator',0.5,'rudder',0.5,'throttle',0,'htp_trim',0.5);

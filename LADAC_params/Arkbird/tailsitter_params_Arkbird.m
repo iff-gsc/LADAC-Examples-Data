@@ -46,7 +46,7 @@ tailsitter.prop = propMapLoadParams( 'propeller_map_based_params_Arkbird' );
 tailsitter.motor = motorLoadParams( 'motor_bldc_params_Arkbird' );
 
 % battery parameters
-tailsitter.bat = batteryLoadParams( 'battery_params_Arkbird' );
+tailsitter.bat = loadParams( 'battery_params_Arkbird' );
 
 % actuator parameters
 tailsitter.act.elevons = actuatorsLoadParams('actuators_pt2_params_Arkbird');
