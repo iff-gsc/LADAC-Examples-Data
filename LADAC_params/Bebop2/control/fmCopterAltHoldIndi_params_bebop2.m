@@ -21,10 +21,10 @@ param.ceb = loadParams( 'indiCeBody_params_bebop2' );
 param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
 
 % sensor filter
-param.sens_filt = loadParams( 'indiSensFilt_params_default' );
+param.sflt = loadParams( 'indiSensFilt_params_default' );
 
 % motor time constant, in s
-param.motor_time_constant = 0.0135;
+param.mtc = 0.0135;
 
 % flight mode sample time, in s
-param.sample_time = 0.0025;
+param.ts = 0.0025;
