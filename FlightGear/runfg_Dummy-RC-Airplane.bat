@@ -1,4 +1,5 @@
-C:
+call fg_aircraft_path.bat
+
 cd C:\Program Files\FlightGear 3.4.0
 
 SET FG_ROOT=C:\Program Files\FlightGear 3.4.0\data
