@@ -29,13 +29,13 @@ airplane.prop.config.Pos = [0;0;0];
 airplane.prop.config.Rot = euler2Dcm(deg2rad([0 -8 0]));
 
 % motor parameters
-airplane.motor = motorLoadParams( 'params_motor_bldc_EasyGlider' );
+airplane.motor = loadParams( 'params_motor_bldc_EasyGlider' );
 
 % actuator parameters
-airplane.act.ailerons = actuatorsLoadParams('actuators_pt2_params_default');
-airplane.act.elevator = actuatorsLoadParams('actuators_pt2_params_default');
-airplane.act.rudder = actuatorsLoadParams('actuators_pt2_params_default');
-airplane.act.htpTrim = actuatorsLoadParams('actuators_pt2_params_default');
+airplane.act.ailerons = loadParams('actuators_pt2_params_default');
+airplane.act.elevator = loadParams('actuators_pt2_params_default');
+airplane.act.rudder = loadParams('actuators_pt2_params_default');
+airplane.act.htpTrim = loadParams('actuators_pt2_params_default');
 
 % battery parameters
 airplane.bat = loadParams( 'params_battery_EasyGlider' );

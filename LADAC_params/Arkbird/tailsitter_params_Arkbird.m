@@ -40,16 +40,16 @@ tailsitter.config.hitPoints_c = [ ...
                     ]';
 
 % propeller parameters
-tailsitter.prop = propMapLoadParams( 'propeller_map_based_params_Arkbird' );
+tailsitter.prop = propMapLoadParams( 'propMap_params_default' );
 
 % motor parameters
-tailsitter.motor = motorLoadParams( 'motor_bldc_params_Arkbird' );
+tailsitter.motor = loadParams( 'motor_bldc_params_Arkbird' );
 
 % battery parameters
 tailsitter.bat = loadParams( 'battery_params_Arkbird' );
 
 % actuator parameters
-tailsitter.act.elevons = actuatorsLoadParams('actuators_pt2_params_Arkbird');
+tailsitter.act.elevons = loadParams('actuators_pt2_params_Arkbird');
 
 % reference position
 tailsitter.posRef = posRefLoadParams( 'reference_position_params_default' );
