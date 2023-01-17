@@ -6,7 +6,7 @@
 % https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8764021&casa_token=eq4U7fQKZ5gAAAAA:TBj46Qv30R_7cLNkTUOas4wz7Sb9lcKHZ88GghcMbz6kI0RnS5RCa6g7wfDjVuAWW79BtI1P&tag=1
 
 % Disclamer:
-%   SPDX-License-Identifier: GPL-2.0-only
+%   SPDX-License-Identifier: GPL-3.0-only
 % 
 %   Copyright (C) 2020-2022 Yannic Beyer
 %   Copyright (C) 2022 TU Braunschweig, Institute of Flight Guidance
