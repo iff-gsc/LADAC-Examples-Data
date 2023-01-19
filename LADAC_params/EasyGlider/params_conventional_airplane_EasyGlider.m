@@ -7,8 +7,14 @@
 %   Copyright (C) 2022 TU Braunschweig, Institute of Flight Guidance
 % *************************************************************************
 
-% rigid body parameters
-airplane.body = rigidBodyLoadParams( 'params_rigid_body_EasyGlider' );
+% mass, kg
+airplane.body.m = 1.0;
+% inertia matrix, kg*m^2
+airplane.body.I = [ ...
+        0.0712, 0, 0; ...
+        0, 0.0482, 0; ...
+        0, 0, 0.1182 ...
+        ];
 
 % center of gravity in c frame, m
 airplane.config.cg = [-0.33;0;0];

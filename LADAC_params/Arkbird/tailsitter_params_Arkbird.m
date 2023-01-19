@@ -8,7 +8,10 @@
 % *************************************************************************
 
 % rigid body parameters
-tailsitter.body = rigidBodyLoadParams( 'rigid_body_params_Arkbird' );
+% mass, kg
+tailsitter.body.m = 1.1;
+% inertia matrix, kg*m^2
+tailsitter.body.I = diag([ 0.0179, 0.0113, 0.0287 ]);
 
 % configuration parameters
 % center of gravity position in c frame, in m
