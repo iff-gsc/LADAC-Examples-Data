@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ 
+    <path>SuspendedLoad.ac</path>
+
+    <!-- Definition of suspended load animation group -->
+    <animation>
+        <name>Payload</name>
+        <object-name>Sphere</object-name>
+        <object-name>Cone</object-name>
+    </animation>
+    <animation>
+        <name>SuspendedLoad</name>
+        <object-name>Cylinder</object-name>
+        <object-name>Payload</object-name>
+    </animation>
+
+
+    <!-- Definition of suspended load animations -->
+    <!-- Rod suspension position -->
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>translate</type>
+        <property>gear/gear[0]/position-norm</property>
+        <factor>1</factor>
+        <axis>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>translate</type>
+        <property>gear/gear[1]/position-norm</property>
+        <factor>1</factor>
+        <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>translate</type>
+        <property>gear/gear[2]/position-norm</property>
+        <factor>1</factor>
+        <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+        </axis>
+    </animation>
+
+    <!-- Rod length -->
+    <animation>
+        <object-name>Payload</object-name>
+        <type>translate</type>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>1</factor>
+        <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>Cylinder</object-name>
+        <type>scale</type>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <x-min>1.0</x-min>
+        <y-min>1.0</y-min>
+        <z-min>0.0</z-min>
+        <x-factor>0.0</x-factor>
+        <y-factor>0.0</y-factor>
+        <z-factor>1.0</z-factor>
+    </animation>
+
+    <!-- Payload Diameter -->
+    <animation>
+        <object-name>Payload</object-name>
+        <type>scale</type>
+        <property>surface-positions/left-aileron-pos-norm</property>
+        <factor>1</factor>
+        <x-factor>1.0</x-factor>
+        <y-factor>1.0</y-factor>
+        <z-factor>1.0</z-factor>
+    </animation>
+
+    <!-- Rod Diameter -->
+    <animation>
+        <object-name>Cylinder</object-name>
+        <type>scale</type>
+        <property>surface-positions/elevator-trim-tab-pos-norm</property>
+        <factor>1</factor>
+        <x-min>0.0</x-min>
+        <y-min>0.0</y-min>
+        <z-min>1.0</z-min>
+        <x-factor>1.0</x-factor>
+        <y-factor>1.0</y-factor>
+        <z-factor>0.0</z-factor>
+    </animation>
+
+    <!-- Rotation -->
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>rotate</type>
+        <property>surface-positions/spoilers-pos-norm</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>rotate</type>
+        <property>surface-positions/elevator-pos-norm</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <animation>
+        <object-name>SuspendedLoad</object-name>
+        <type>rotate</type>
+        <property>surface-positions/rudder-pos-norm</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>
