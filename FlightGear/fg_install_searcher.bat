@@ -9,11 +9,11 @@ set /A increment=1
 set folder_name=0
 
 set "fg_search_path=%programfiles%"
-cd %fg_search_path%
+cd /d %fg_search_path%
 call:fgSearcher
 
 set "fg_search_path=%programfiles(x86)%"
-cd %fg_search_path%
+cd /d %fg_search_path%
 call:fgSearcher
 
 if ("%num_fg_versions%"=="0") (
