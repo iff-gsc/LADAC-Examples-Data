@@ -20,7 +20,7 @@ param.cep = loadParams( 'indiCeProp_params_default' );
 param.ceb = loadParams( 'indiCeBody_params_default' );
 
 % control allocation
-param.ca = loadParams( 'control_allocation_wls_params_quadcopter' );
+param.ca = loadParams( 'caWls_params_default' );
 
 % sensor filter
 param.sflt = loadParams( 'indiSensFilt_params_Minnie' );

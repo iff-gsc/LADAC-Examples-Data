@@ -16,4 +16,4 @@
 param = loadParams( 'caWls_params_default' );
 
 % weighting mxm matrix of pseudo-control
-param.W_v = diag([30,30,0.01,300]);
+param.W_v = [30; 30; 0.01; 300];
