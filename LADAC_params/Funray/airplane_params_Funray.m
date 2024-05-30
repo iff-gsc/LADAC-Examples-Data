@@ -8,12 +8,12 @@
 % *************************************************************************
 
 % mass, kg
-airplane.body.m = 2.0;
+airplane.body.m = 2.17;
 % inertia matrix, kg*m^2
 airplane.body.I = [ ...
-        0.189, 0, -0.023; ...
-        0, 0.524, 0; ...
-        -0.023, 0, 0.708 ...
+        0.190, 0, -0.024; ...
+        0, 0.555, 0; ...
+        -0.024, 0, 0.739 ...
         ];
 
 % center of gravity in c frame, m
@@ -45,8 +45,8 @@ airplane.act.elevator = loadParams('actuatorsPt2_params_Funray');
 airplane.act.elevator.deflectionMax = deg2rad(21);
 airplane.act.elevator.deflectionMin = -deg2rad(21);
 airplane.act.rudder = loadParams('actuatorsPt2_params_Funray');
-airplane.act.rudder.deflectionMax = deg2rad(32);
-airplane.act.rudder.deflectionMin = -deg2rad(32);
+airplane.act.rudder.deflectionMax = deg2rad(27);
+airplane.act.rudder.deflectionMin = -deg2rad(27);
 airplane.act.htpTrim = loadParams('actuatorsPt2_params_Funray');
 
 % battery parameters

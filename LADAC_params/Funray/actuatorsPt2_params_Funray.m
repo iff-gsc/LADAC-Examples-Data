@@ -8,7 +8,7 @@
 % *************************************************************************
 
 % natural frequency, rad/s
-param.naturalFrequency = 120;
+param.naturalFrequency = 150;
 % damping ratio, 1
 param.dampingRatio = 1;
 % maximum deflection, rad
