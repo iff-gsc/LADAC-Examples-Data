@@ -30,20 +30,20 @@ prm.nu       	= deg2rad([0,0,0,0,0,0]);
 %% wing device segments (d device segments)
 
 % spanwise coordinates of wing device segments (1x(d+1) array), in -
-prm.eta_segments_device = [0,0.475,0.895,1];
+prm.eta_segments_device = [0,0.085,0.475,0.895,1];
 % section name (dx? char array); two airfoil projects available:
 %   1) "airfoilAnalyticSimple..." (see airfoilAnalyticSimpleCreate) <-- recommended!
 %   2) "airfoilAnalytic0515..." (see airfoilAnalytic0515LoadParams) <-- good luck!
 prm.section = char(repmat(["airfoilAnalyticSimple_params_default"],6,1));
 % relative flap depth for each device segment (1xd array), in -
-prm.flap_depth          = [ 0, 0.23, 0 ];
+prm.flap_depth          = [ 0, 0.23, 0.23, 0 ];
 % second actuator type (dx? char array); available options:
 %   1) "none" no second actuator
 %   2) "airfoilMicroTab..." (see airfoilMicroTabLoadParams)
-prm.actuator_2_type = char(repmat(["none"],3,1));
+prm.actuator_2_type = char(repmat(["none"],5,1));
 % index of the control input (0 means no control input) (1x(2*d) array), in -  
-prm.control_input_index = [ 0, 1, 0, 0, 2, 0; ...
-                            zeros(1,6) ];
+prm.control_input_index = [ 0, 1, 2, 0, 0, 3, 4, 0; ...
+                            zeros(1,8) ];
 
 %% coordinates in reference frame
 
