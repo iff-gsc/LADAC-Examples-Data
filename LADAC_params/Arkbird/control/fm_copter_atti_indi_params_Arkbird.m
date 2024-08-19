@@ -1,6 +1,6 @@
 % ** INDI attitude flight mode parameters (Arkbird) **
 
-% Disclamer:
+% Disclaimer:
 %   SPDX-License-Identifier: GPL-3.0-only
 % 
 %   Copyright (C) 2020-2022 Yannic Beyer

@@ -4,7 +4,7 @@
 %   https://apps.dtic.mil/dtic/tr/fulltext/u2/1008930.pdf
 %   http://www.arducopter.co.uk/iris-quadcopter-uav.html
 
-% Disclamer:
+% Disclaimer:
 %   SPDX-License-Identifier: GPL-3.0-only
 % 
 %   Copyright (C) 2020-2022 Yannic Beyer
