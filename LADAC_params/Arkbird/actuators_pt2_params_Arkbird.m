@@ -1,6 +1,6 @@
 %  ** second order actuator parameters (Arkbird) **
 
-% Disclaimer:
+% Disclamer:
 %   SPDX-License-Identifier: GPL-3.0-only
 % 
 %   Copyright (C) 2020-2022 Yannic Beyer
@@ -17,3 +17,5 @@ param.deflectionMax = deg2rad(25);
 param.deflectionMin = deg2rad(-25);
 % maximum deflection rate, rad/2
 param.deflectionRateMax = deg2rad(60/0.18);
+% transport delay, s
+param.delay = 0;
