@@ -32,7 +32,7 @@ airplane.prop = propMapLoadParams( 'propMap_params_Funray' );
 
 % propeller configuration parameters
 airplane.prop.config.Pos = [0;0;0];
-airplane.prop.config.Rot = euler2Dcm(deg2rad([0 -8 0]));
+airplane.prop.config.Rot = euler2Dcm(deg2rad([0 0 0]));
 
 % motor parameters
 airplane.motor = loadParams( 'motorBldc_params_Funray' );
