@@ -10,11 +10,11 @@ call fg_install_searcher.bat
     --native-ctrls=socket,out,30,127.0.0.1,5503,udp ^
     --fog-disable ^
     --disable-clouds ^
+    --disable-sound ^
     --disable-ai-models ^
     --disable-ai-traffic ^
     --disable-random-objects ^
     --disable-real-weather-fetch ^
-    --disable-sound ^
     --timeofday=noon ^
     --in-air ^
     --lat=52.318701 ^
@@ -23,4 +23,10 @@ call fg_install_searcher.bat
     --heading=85.5 ^
     --offset-distance=4.72 ^
     --offset-azimuth=0 ^
-    --enable-terrasync
+    --enable-terrasync ^
+    --disable-hud-3d ^
+    --disable-horizon-effect ^
+    --disable-specular-highlight ^
+    --disable-anti-alias-hud ^
+    --wind=0@0 ^
+    --bpp=32

@@ -28,6 +28,12 @@ fgfs --aircraft=IRIS \
     --heading=85.5 \
     --offset-distance=4.72 \
     --offset-azimuth=0 \
-    --geometry=640x480 \
+    --geometry=650x550 \
     --max-fps=30 \
-    --enable-terrasync
+    --enable-terrasync \
+    --disable-hud-3d \
+    --disable-horizon-effect \
+    --disable-specular-highlight \
+    --disable-anti-alias-hud \
+    --wind=0@0 \
+    --bpp=32
