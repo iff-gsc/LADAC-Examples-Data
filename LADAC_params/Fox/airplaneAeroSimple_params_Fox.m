@@ -27,12 +27,12 @@ aero.wingVtp = simpleWingCreate( 'wing_params_FoxVtp', 'simpleWing_params_FoxVtp
 
 %% configuration parameters
 % incidence angle of main wing, rad
-aero.config.wingMainIncidence = deg2rad(-0.7);
+aero.config.wingMainIncidence = deg2rad(1.5);
 % position of main wing (l/4 at the root) in c frame, m
-aero.config.wingMainPos = [ -0.114; 0; -0.0187 ];
+aero.config.wingMainPos = [ -0.114; 0; -0.018 ];
 % position of horizontal tailplane (l/4 at the root)  in c frame, m
-aero.config.wingHtpPos = [ -0.339; 0; -0.0225 ];
+aero.config.wingHtpPos = [ -0.342; 0; -0.0219 ];
 % position of vertical tailplane (l/4 at the root)  in c frame, m
-aero.config.wingVtpPos = [ -0.323; 0; -0.0245 ];
+aero.config.wingVtpPos = [ -0.327; 0; -0.0545 ];
 % rotation matrix of vertical tailplane (relative to c frame)
 aero.config.wingVtpRot = euler2Dcm( [pi/2;0;0] );

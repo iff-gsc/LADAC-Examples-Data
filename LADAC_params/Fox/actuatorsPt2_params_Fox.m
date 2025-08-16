@@ -1,4 +1,4 @@
-%  ** second order actuator parameters (Fox with KST DS215MG HV V8) **
+%  ** second order actuator parameters (Fox with HS-40) **
 
 % Disclaimer:
 %   SPDX-License-Identifier: GPL-3.0-only
@@ -8,7 +8,7 @@
 % *************************************************************************
 
 % natural frequency, rad/s
-param.naturalFrequency = 178;
+param.naturalFrequency = 110;
 % damping ratio, 1
 param.dampingRatio = 0.866;
 % maximum deflection, rad
@@ -16,4 +16,4 @@ param.deflectionMax = deg2rad(25);
 % minimum deflection, rad
 param.deflectionMin = deg2rad(-25);
 % maximum deflection rate, rad/2
-param.deflectionRateMax = deg2rad(60/0.09);
+param.deflectionRateMax = deg2rad(60/0.1);

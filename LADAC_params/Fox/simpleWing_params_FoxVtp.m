@@ -11,39 +11,39 @@
 % maximum angle of attack for linear C_L, deg
 wing.polar.params.alpha_linend = 5.5;
 % angle of attack for maximum C_L (stall), deg
-wing.polar.params.alpha_max = 19;
+wing.polar.params.alpha_max = 17.0;
 % zero angle of attack lift coefficient, -
 wing.polar.params.C_L0 = 0;
 % maximum lift coefficient (C_L), -
-wing.polar.params.C_Lmax = 0.43;
+wing.polar.params.C_Lmax = 0.45;
 % angle of attack for minimum C_L after stall, deg
-wing.polar.params.alpha_min = 33;
+wing.polar.params.alpha_min = 32;
 % minimum C_L after stall, -
-wing.polar.params.C_Lmin = 0.3;
+wing.polar.params.C_Lmin = 0.31;
 % angle of attack for second maximum C_L after stall, deg
-wing.polar.params.alpha_max2 = 51;
+wing.polar.params.alpha_max2 = 50;
 % second maximum C_L after stall, -
-wing.polar.params.C_Lmax2 = 0.38;
+wing.polar.params.C_Lmax2 = 0.40;
 % drag coefficient for zero angle of attack, -
 wing.polar.params.C_D0 = 0.02;
 % drag coefficient for 90deg angle of attack, -
 wing.polar.params.C_Dmax = 1.5;
 % drag coeffecient at stall, -
-wing.polar.params.C_Dkink = 0.151;
+wing.polar.params.C_Dkink = 0.136;
 % angle of attack for drag coefficient at stall, deg
-wing.polar.params.alpha_kink = 19;
+wing.polar.params.alpha_kink = 17.0;
 
 
 % span, m
-wing.geometry.b = 0.05;
+wing.geometry.b = 0.06;
 % Oswald's efficiency factor, -
 wing.geometry.e = 0.8;
 % mean chord, m
-wing.geometry.c = 0.0342;
+wing.geometry.c = 0.0337;
 % sweep, rad
-wing.geometry.phi = deg2rad(14.1);
+wing.geometry.phi = deg2rad(11.88);
 % taper, -
-wing.geometry.z = 0.595;
+wing.geometry.z = 0.596;
 
 
 
@@ -54,15 +54,17 @@ wing.lateral_polar.c_Lbeta90alpha0 = 0.3/(pi/4);
 
 
 % y beginning of the flap relative to the span, -
-wing.flap.eta_0 = 0;
+wing.flap.eta_0 = 0.168;
 % depth of the flap relative to the chord, -
-wing.flap.lambda_K = 0.35;
+wing.flap.lambda_K = 0.5;
 % empirical flap effectiveness reduction factor, -
 wing.flap.x = 0.5;
 % drag coefficient due to elevon deflection
 wing.flap.C_D_dEta = 0.025;
 
 
+% zero-lift pitching moment coefficient
+wing.c_m0 = 0;
 % Pitching moment coefficient derivative with respect to the dimensionless
 % pitching rate ( Omega_y = q/(c*V), in 1 [1, p. 93] ).
 % This derivative can be estimated from [1, p. 93], where it is defined as

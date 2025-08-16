@@ -30,7 +30,7 @@ prm.nu       	= deg2rad([0]);
 %% wing device segments (d device segments)
 
 % spanwise coordinates of wing device segments (1x(d+1) array), in -
-prm.eta_segments_device = [0,0.81,1];
+prm.eta_segments_device = [0,0.811,1];
 % section name (dx? char array); two airfoil projects available:
 %   1) "airfoilAnalyticSimple..." (see airfoilAnalyticSimpleCreate) <-- recommended!
 %   2) "airfoilAnalytic0515..." (see airfoilAnalytic0515LoadParams) <-- good luck!
@@ -48,10 +48,10 @@ prm.control_input_index = [ 0, 1, 2, 0; ...
 %% coordinates in reference frame
 
 % wing incidence relative x-y-plane of reference frame, in rad
-prm.i = deg2rad(0);
+prm.i = deg2rad(-1.0);
 % wing rotation about x axis of reference frame, in rad
 prm.rot_x = 0;
 % x position of the wing (leading edge at wing root) in reference frame (scalar), in m
-prm.x = -0.33; 
+prm.x = -0.33293; 
 % z position of the wing (leading edge at wing root) in reference frame (scalar), in m
-prm.z = -0.0225;
+prm.z = -0.0219;

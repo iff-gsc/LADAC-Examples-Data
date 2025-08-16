@@ -8,20 +8,20 @@
 % *************************************************************************
 
 % mass, kg
-airplane.body.m = 0.25;
+airplane.body.m = 0.212;
 % inertia matrix, kg*m^2
 airplane.body.I = [ ...
-         0.002025, -5.74e-07, -5.61e-05; ...
-        -5.74e-07,  0.00179 ,  7.28e-08; ...
-        -5.61e-05, -7.28e-08,  0.003683  ...
+         0.001259  , -3.279e-06,  1.1005e-04; ...
+        -3.279e-06 ,  0.0012851, -2.53e-06  ; ...
+         1.1005e-04, -2.53e-06 ,  0.0024554   ...
         ];
 
 % center of gravity in c frame, m
-airplane.config.cg = [-0.13;0;-0.0091];
+airplane.config.cg = [-0.1287; 0.00113; -0.009158];
 % collision points in c frame, m
-airplane.config.hitPoints = [ [0;0;0],[-0.351;0;-0.022],[-0.111;0.283;-0.0215],[-0.111;-0.283;-0.0215],...
-    [-0.086;0;-0.02],[-0.1;0;0.025],[-0.333;0;-0.073],[-0.352;-0.051;-0.022],...
-    [-0.352;0.051;-0.022]];
+airplane.config.hitPoints = [ [0;0;0],[-0.026;0;-0.013],[-0.103;0.285;-0.022],[-0.103;-0.285;-0.022],...
+    [-0.159;0.285;-0.025],[-0.159;-0.285;-0.025],[-0.334;0;-0.085],[-0.358;0;-0.085],...
+    [-0.367;0.080;-0.022],[-0.367;-0.080;-0.022],[-0.040;0;0.030],[-0.160;0.060;0.030],[-0.160;-0.060;0.030]];
 
 % aerodynamics parameters
 airplane.aero = conventionalAirplaneAeroLoadParams( ...
@@ -31,7 +31,7 @@ airplane.aero = conventionalAirplaneAeroLoadParams( ...
 airplane.prop = propMapLoadParams( 'propMap_params_Fox' );
 
 % propeller configuration parameters
-airplane.prop.config.Pos = [0;0;0];
+airplane.prop.config.Pos = [-0.003;0;0];
 airplane.prop.config.Rot = euler2Dcm(deg2rad([0 0 0]));
 
 % motor parameters
@@ -39,14 +39,14 @@ airplane.motor = loadParams( 'motorBldc_params_Fox' );
 
 % actuator parameters
 airplane.act.ailerons = loadParams('actuatorsPt2_params_Fox');
-airplane.act.ailerons.deflectionMax = deg2rad(28);
-airplane.act.ailerons.deflectionMin = -deg2rad(28);
+airplane.act.ailerons.deflectionMax = deg2rad(25);
+airplane.act.ailerons.deflectionMin = -deg2rad(25);
 airplane.act.elevator = loadParams('actuatorsPt2_params_Fox');
-airplane.act.elevator.deflectionMax = deg2rad(21);
-airplane.act.elevator.deflectionMin = -deg2rad(21);
+airplane.act.elevator.deflectionMax = deg2rad(25);
+airplane.act.elevator.deflectionMin = -deg2rad(25);
 airplane.act.rudder = loadParams('actuatorsPt2_params_Fox');
-airplane.act.rudder.deflectionMax = deg2rad(27);
-airplane.act.rudder.deflectionMin = -deg2rad(27);
+airplane.act.rudder.deflectionMax = deg2rad(25);
+airplane.act.rudder.deflectionMin = -deg2rad(25);
 airplane.act.htpTrim = loadParams('actuatorsPt2_params_Fox');
 airplane.act.htpTrim.deflectionMax = deg2rad(5);
 airplane.act.htpTrim.deflectionMin = -deg2rad(5);
@@ -69,10 +69,10 @@ airplane.grnd = groundLoadParams( 'params_ground_default' );
 % kinematic rotational velocity, rad/s
 airplane.ic.omega_Kb = zeros(3,1);
 % quaternion attitude from NED to body frame
-airplane.ic.q_bg = [1;0;0;0];
+airplane.ic.q_bg = [0.7343;0;0;0.6788];
 % kinematic velocity in body frame, m/s
 airplane.ic.V_Kb = [0;0;0];
 % NED position relative to posRef, m
-airplane.ic.s_Kg = [0; 0; -1];
+airplane.ic.s_Kg = [0; 0; -0.3];
 % motor angular velocity, rad/s
 airplane.ic.motor_speed = 0;

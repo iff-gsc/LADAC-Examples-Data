@@ -11,7 +11,7 @@
 % maximum angle of attack for linear C_L, deg
 wing.polar.params.alpha_linend = 5.5;
 % angle of attack for maximum C_L (stall), deg
-wing.polar.params.alpha_max = 11.5;
+wing.polar.params.alpha_max = 11.6;
 % zero angle of attack lift coefficient, -
 wing.polar.params.C_L0 = 0;
 % maximum lift coefficient (C_L), -
@@ -31,11 +31,11 @@ wing.polar.params.C_Dmax = 1.5;
 % drag coeffecient at stall, -
 wing.polar.params.C_Dkink = 0.093;
 % angle of attack for drag coefficient at stall, deg
-wing.polar.params.alpha_kink = 12;
+wing.polar.params.alpha_kink = 11.6;
 
 
 % span, m
-wing.geometry.b = 0.016;
+wing.geometry.b = 0.16;
 % Oswald's efficiency factor, -
 wing.geometry.e = 0.85;
 % mean chord, m
@@ -50,7 +50,7 @@ wing.geometry.z = 1;
 % maximum C_L for 90deg sideslip angle, -
 wing.lateral_polar.c_Lbeta90max = 0.35;
 % derivative dC_L/dalpha|beta=90deg,1/rad
-wing.lateral_polar.c_Lbeta90alpha0 = 0.3/(pi/4);
+wing.lateral_polar.c_Lbeta90alpha0 = 0.25/(pi/4);
 
 
 % y beginning of the flap relative to the span, -
@@ -63,6 +63,8 @@ wing.flap.x = 0.5;
 wing.flap.C_D_dEta = 0.025;
 
 
+% zero-lift pitching moment coefficient
+wing.c_m0 = 0;
 % Pitching moment coefficient derivative with respect to the dimensionless
 % pitching rate ( Omega_y = q/(c*V), in 1 [1, p. 93] ).
 % This derivative can be estimated from [1, p. 93], where it is defined as
