@@ -58,7 +58,7 @@ airplane.cmd = struct('aileron_left',0.5*ones(1,num_flaps),'aileron_right',0.5*o
 struct2slbus(airplane.cmd,'cmd');
 
 % reference position
-airplane.posRef = posRefLoadParams( 'reference_position_params_default' );
+airplane.posRef = loadParams( 'flightgearRefPos_params_default' );
 
 % ground contact parameters
 airplane.grnd = groundLoadParams( 'params_ground_default' );
