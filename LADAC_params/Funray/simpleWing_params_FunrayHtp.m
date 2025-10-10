@@ -25,7 +25,7 @@ wing.polar.params.alpha_max2 = 40;
 % second maximum C_L after stall, -
 wing.polar.params.C_Lmax2 = 0.8;
 % drag coefficient for zero angle of attack, -
-wing.polar.params.C_D0 = 0.03;
+wing.polar.params.C_D0 = 0.015;
 % drag coefficient for 90deg angle of attack, -
 wing.polar.params.C_Dmax = 1.5;
 % drag coeffecient at stall, -

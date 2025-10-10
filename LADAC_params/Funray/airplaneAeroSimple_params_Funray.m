@@ -27,7 +27,7 @@ aero.wingVtp = simpleWingCreate( 'wing_params_FunrayVtp', 'simpleWing_params_Fun
 
 %% configuration parameters
 % incidence angle of main wing, rad
-aero.config.wingMainIncidence = deg2rad(3);
+aero.config.wingMainIncidence = deg2rad(4);
 % position of main wing (l/4 at the root) in c frame, m
 aero.config.wingMainPos = [ -0.4325; 0; -0.05 ];
 % position of horizontal tailplane (l/4 at the root)  in c frame, m
