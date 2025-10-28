@@ -52,6 +52,6 @@ prm.i = deg2rad(3);
 % wing rotation about x axis of reference frame, in rad
 prm.rot_x = 0;
 % x position of the wing (leading edge at wing root) in reference frame (scalar), in m
-prm.x = -0.38; 
+prm.x = -0.37; 
 % z position of the wing (leading edge at wing root) in reference frame (scalar), in m
 prm.z = -0.04;

@@ -25,11 +25,17 @@ aero.wingHtp = simpleWingCreate( 'wing_params_FunrayHtp', 'simpleWing_params_Fun
 aero.wingVtp = simpleWingCreate( 'wing_params_FunrayVtp', 'simpleWing_params_FunrayVtp' );
 % aero.wingVtp = simpleWingLoadParams( 'simpleWing_params_FunrayVtp' );
 
+%% downwash
+wing_main = wingCreate( 'wing_params_FunrayMain', 40 );
+wing_htp = wingCreate( 'wing_params_FunrayHtp', 20 );
+
+aero.downwash = wingGetDownwashDerivs( wing_main, wing_htp );
+
 %% configuration parameters
 % incidence angle of main wing, rad
 aero.config.wingMainIncidence = deg2rad(4);
 % position of main wing (l/4 at the root) in c frame, m
-aero.config.wingMainPos = [ -0.4325; 0; -0.05 ];
+aero.config.wingMainPos = [ -0.43; 0; -0.05 ];
 % position of horizontal tailplane (l/4 at the root)  in c frame, m
 aero.config.wingHtpPos = [ -1.12; 0; -0.04 ];
 % position of vertical tailplane (l/4 at the root)  in c frame, m
