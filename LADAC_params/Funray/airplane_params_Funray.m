@@ -71,6 +71,6 @@ airplane.ic.q_bg = [1;0;0;0];
 % kinematic velocity in body frame, m/s
 airplane.ic.V_Kb = [0;0;0];
 % NED position relative to posRef, m
-airplane.ic.s_Kg = [0; 0; -1];
+airplane.ic.s_Kg = [0; 0; 0];
 % motor angular velocity, rad/s
 airplane.ic.motor_speed = 0;
