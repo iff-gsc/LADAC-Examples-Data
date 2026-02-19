@@ -18,7 +18,7 @@ param.u_max = ones(4,1);
 param.u_d = [0.5;0.5;0.1;0.1];
 
 % weighting mxm matrix of pseudo-control
-param.W_v = diag([10,10,0.01]);
+param.W_v = diag([10,10,0.01,1]);
 % weighting kxk matrix of the control input vector
 param.W_u = eye(4);
 % weighting of pseudo-control vs. control input (scalar)

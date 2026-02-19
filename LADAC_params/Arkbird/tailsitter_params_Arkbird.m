@@ -56,7 +56,7 @@ tailsitter.act.elevons = loadParams('actuators_pt2_params_Arkbird');
 
 % reference position
 tailsitter.posRef = loadParams( 'flightgearRefPos_params_default' );
-tailsitter.posRef.alt = tailsitter.posRef.alt + 0.5;
+tailsitter.posRef.alt = tailsitter.posRef.alt + 0.2;
 
 % ground contact parameters
 tailsitter.grnd = groundLoadParams( 'params_ground_default' );

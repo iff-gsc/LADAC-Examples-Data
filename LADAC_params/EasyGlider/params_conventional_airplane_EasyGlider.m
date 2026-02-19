@@ -51,7 +51,7 @@ airplane.cmd = struct('aileron_left',0.5,'aileron_right',0.5,'elevator',0.5,'rud
 struct2slbus(airplane.cmd,'cmd');
 
 % reference position
-airplane.posRef = posRefLoadParams( 'reference_position_params_default' );
+airplane.posRef = loadParams( 'flightgearRefPos_params_default' );
 
 % ground contact parameters
 airplane.grnd = groundLoadParams( 'params_ground_default' );
@@ -64,6 +64,6 @@ airplane.ic.q_bg = [1;0;0;0]; %[1;0;0;0]
 % kinematic velocity in body frame, m/s
 airplane.ic.V_Kb = [0;0;0];
 % NED position relative to posRef, m
-airplane.ic.s_Kg = [0; 0; -1];
+airplane.ic.s_Kg = [0; 0; 0];
 % motor angular velocity, rad/s
 airplane.ic.motor_speed = 0;

@@ -12,8 +12,6 @@ param.atc = loadParams( 'cntrlAttiRedIndi_params_Arkbird' );
 
 % control effectiveness
 param.cntrl_effect = loadParams( 'control_effectiveness_params_Arkbird' );
-param.cntrl_effect.ny_du_red =  param.cntrl_effect.ny_du_red(1:3,:);
-param.cntrl_effect.ny_du_dt =  param.cntrl_effect.ny_du_dt(1:3,:);
 
 % control allocation
 param.ca = loadParams( 'control_allocation_wls_params_Arkbird' );
