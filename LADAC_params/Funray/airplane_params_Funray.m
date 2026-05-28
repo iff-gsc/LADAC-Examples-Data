@@ -48,6 +48,8 @@ airplane.act.rudder = loadParams('actuatorsPt2_params_Funray');
 airplane.act.rudder.deflectionMax = deg2rad(27);
 airplane.act.rudder.deflectionMin = -deg2rad(27);
 airplane.act.htpTrim = loadParams('actuatorsPt2_params_Funray');
+airplane.act.htpTrim.deflectionMax = deg2rad(2.5);
+airplane.act.htpTrim.deflectionMin = deg2rad(2.5);
 
 % battery parameters
 airplane.bat = loadParams( 'battery_params_Funray' );
