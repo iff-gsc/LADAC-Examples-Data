@@ -1,5 +1,16 @@
 @echo off
 
+REM Get directory of the script
+set "AIRCRAFTPATH=%~dp0"
+
+REM Set FG_AIRCRAFT environment variable
+if defined FG_AIRCRAFT (
+    set "FG_AIRCRAFT=%AIRCRAFTPATH%;%FG_AIRCRAFT%"
+) else (
+    set "FG_AIRCRAFT=%AIRCRAFTPATH%"
+)
+echo FG_AIRCRAFT=%FG_AIRCRAFT%
+
 call fg_install_searcher.bat
 
 call fg_aircraft_path.bat
